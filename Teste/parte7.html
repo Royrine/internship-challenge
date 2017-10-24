@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Meu IMC</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div>
+				<h1 id="titulo">Vacinas</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Relação de pacientes vacinados</h2>
+				<label for="filtro-tabela">Pesquisar</label>
+				<input type="text" name="filtro" id="filtro-tabela" placeholder="Digite o nome do paciente">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome da Vacina</th>
+							<th>Última Aplicação</th>
+							<th>Data do Cadastro</th>
+							<th>Última Alteração</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-vacinas">
+						<tr class="vacina"  id="vacina-um">
+							<td class="info-nome">Robert</td>
+							<td class="info-peso">10/02/2002</td>
+							<td class="info-altura">01/10/1998</td>
+							<td class="info-gordura">10/02/2002</td>
+						</tr>
+
+						<tr class="vacina" >
+							<td class="info-nome">Talon</td>
+							<td class="info-peso">15/03/2015</td>
+							<td class="info-altura">01/10/2000</td>
+							<td class="info-gordura">21/04/1998</td>
+						</tr>
+
+						<tr class="vacina" >
+							<td class="info-nome">John</td>
+							<td class="info-peso">10/09/2017</td>
+							<td class="info-altura">10/07/2017</td>
+							<td class="info-gordura">28/08/2017</td>
+						</tr>
+					</tbody>
+
+				</table>
+			</section>
+
+			<section class="container">
+					<h2 id="titulo-form">Adicionar nova vacina</h2>
+						<ul id="mensagens-erro">
+
+						</ul>
+					<form id="form-adiciona">
+						<div class="">
+							<label for="nome">Nome da Vacina:</label>
+							<input id="nome" name="nome" type="text" placeholder="digite o nome da vacina" class="campo">
+						</div>
+						<div class="grupo">
+							<label for="peso">Data de Aplicação:</label>
+							<input id="peso" name="peso" type="text" placeholder="digite a data de aplicação (xx/xx/xxxx)" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="altura">Data do Cadastro:</label>
+							<input id="altura" name="altura" type="text" placeholder="digite a data de cadastro (xx/xx/xxxx)" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="gordura">Última Aplicação:</label>
+							<input id="gordura" type="text" placeholder="digite a última aplicação (xx/xx/xxxx)" class="campo campo-medio">
+						</div>
+
+						<button id="adicionar-vacina" class="botao bto-principal">Adicionar</button>
+					</form>
+				</section>
+		</main>
+			<script type="text/javascript" src="js\form.js"></script>
+			<script type="text/javascript" src="js\remover.js"></script>
+			<script type="text/javascript" src="js\filtra.js"></script>
+			<script type="text/javascript" src="js\update.js"></script>
+
+	</body>
+</html>
